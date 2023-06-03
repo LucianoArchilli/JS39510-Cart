@@ -4,6 +4,9 @@ const blankCart = document.getElementById("blank-cart");
 const cartCom = document.getElementById("cart-com");
 const cartEvents = document.getElementById("cart-events");
 let cartErase = document.getElementsByClassName("cart-erase");
+const emptyCartBtn = document.getElementById("empty-cart");
+const buyCartBtn = document.getElementById("buy-cart");
+const cartTotal = document.getElementById("total");
 
 
 function loadCart() {
@@ -47,13 +50,13 @@ function loadCart() {
         blankCart.classList.remove("disabled");
         cartCom.classList.add("disabled");
         cartEvents.classList.add("disabled");
-    
     }
+
+    eraseBtn();
+    updTotal();
 }
 
 loadCart();
-
-eraseBtn();
 
 
 function eraseBtn() {
@@ -66,7 +69,36 @@ function eraseBtn() {
 
 function eraseFromCart(e) {
     const idButton = e.currentTarget.id;
-    const erasedProd = cartCom.find(product => product.id === idButton);
-    const index = cartCom.findIndex(product => product.id === idButton);
-    cartCom.splice(index, 1);
+    const index = loadedProd.findIndex(product => product.id === idButton);
+
+
+    loadedProd.splice(index, 1);
+
+    loadCart();
+
+    localStorage.setItem("in-cart-products", JSON.stringify(loadedProd));
+}
+
+emptyCartBtn.addEventListener("click", emptyCart);
+
+function emptyCart() {
+    loadedProd.length = 0;
+    localStorage.setItem("in-cart-products", JSON.stringify(loadedProd));
+    loadCart();
+    
+}
+
+function updTotal() {
+    const cartTotal = loadedProd.reduce((acc, product) => acc + (product.price * product.quantity), 0); 
+    total.innerText = `${cartTotal}`;
+}
+
+
+buyCartBtn.addEventListener("click", buyCart);
+
+function buyCart() {
+    loadedProd.length = 0;
+    localStorage.setItem("in-cart-products", JSON.stringify(loadedProd));
+    loadCart();
+    
 }
