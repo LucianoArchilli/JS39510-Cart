@@ -22,7 +22,7 @@ function loadProducts(selectedProd) {
         const div = document.createElement("div");
         div.classList.add("product");
         div.innerHTML = `
-                        <img src="${product.image}" alt="${product.title}">
+                        <img class="p-img" src="${product.image}" alt="${product.title}">
                             <div class="info">
                                 <h3 class="p-title">${product.title}</h3>
                                 <p class="p-price">${product.price}</p>

@@ -1,8 +1,8 @@
 [
     {
         "id": "repuesto01",
-        "title": "Repuesto 01",
-        "image": "http://placekitten.com/300/400?image=1",
+        "title": "Distribución THP",
+        "image": "../img/distribucion-thp.jpg",
         "category": {
             "name": "Repuestos",
             "id": "repuestos"
@@ -12,8 +12,8 @@
 
     {
         "id": "repuesto02",
-        "title": "Repuesto 02",
-        "image": "http://placekitten.com/300/400?image=2",
+        "title": "Amortiguadores",
+        "image": "../img/amortiguadores.jpg",
         "category": {
             "name": "Repuestos",
             "id": "repuestos"
@@ -23,8 +23,8 @@
 
     {
         "id": "repuesto03",
-        "title": "Repuesto 03",
-        "image": "http://placekitten.com/300/400?image=3",
+        "title": "Kit Tren Delantero",
+        "image": "../img/tren-delantero.jpg",
         "category": {
             "name": "Repuestos",
             "id": "repuestos"
@@ -34,8 +34,8 @@
 
     {
         "id": "repuesto04",
-        "title": "Repuesto 04",
-        "image": "http://placekitten.com/300/400?image=4",
+        "title": "Frenos",
+        "image": "../img/frenos.jpg",
         "category": {
             "name": "Repuestos",
             "id": "repuestos"
@@ -45,8 +45,8 @@
 
     {
         "id": "repuesto05",
-        "title": "Repuesto 05",
-        "image": "http://placekitten.com/300/400?image=5",
+        "title": "Kit Embrague",
+        "image": "../img/embrague.jpg",
         "category": {
             "name": "Repuestos",
             "id": "repuestos"
@@ -56,8 +56,8 @@
 
     {
         "id": "accesorio01",
-        "title": "Accesorio 01",
-        "image": "http://placekitten.com/300/400?image=10",
+        "title": "Cree LED",
+        "image": "../img/luces.jpg",
         "category": {
             "name": "Accesorios",
             "id": "accesorios"
@@ -67,8 +67,8 @@
 
     {
         "id": "accesorio02",
-        "title": "Accesorio 02",
-        "image": "http://placekitten.com/300/400?image=11",
+        "title": "Paños Microfibra",
+        "image": "../img/paño.jpg",
         "category": {
             "name": "Accesorios",
             "id": "accesorios"
@@ -78,8 +78,8 @@
 
     {
         "id": "accesorio03",
-        "title": "Accesorio 03",
-        "image": "http://placekitten.com/300/400?image=12",
+        "title": "Lavado",
+        "image": "../img/shampoo.jpg",
         "category": {
             "name": "Accesorios",
             "id": "accesorios"
@@ -89,8 +89,8 @@
 
     {
         "id": "accesorio04",
-        "title": "Accesorio 04",
-        "image": "http://placekitten.com/300/400?image=13",
+        "title": "Perfume Ambiente Auto",
+        "image": "../img/perfume.jpg",
         "category": {
             "name": "Accesorios",
             "id": "accesorios"
@@ -100,8 +100,8 @@
 
     {
         "id": "accesorio05",
-        "title": "Accesorio 05",
-        "image": "http://placekitten.com/300/400?image=14",
+        "title": "Pomos Palanca Cambios",
+        "image": "../img/pomos.jpg",
         "category": {
             "name": "Accesorios",
             "id": "accesorios"

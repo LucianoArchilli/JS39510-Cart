@@ -39,6 +39,15 @@ nav{
     gap: 2rem;
 }
 
+.p-img{
+    height: 400px;
+    width: 300px;
+    object-fit: contain;
+    border: 5px gainsboro solid;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
 .menu{
     display: flex;
     flex-direction: row;
