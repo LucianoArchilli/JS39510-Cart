@@ -1,118 +1,11 @@
-/* PRODUCTS */
-const products = [
-    //Repuestos
-    {
-        id: "repuesto01",
-        title: "Repuesto 01",
-        image: "http://placekitten.com/300/400?image=1",
-        category: {
-            name: "Repuestos",
-            id: "repuestos"
-        },
-        price: 1000
-    },
+let products = [];
 
-    {
-        id: "repuesto02",
-        title: "Repuesto 02",
-        image: "http://placekitten.com/300/400?image=2",
-        category: {
-            name: "Repuestos",
-            id: "repuestos"
-        },
-        price: 1000
-    },
-
-    {
-        id: "repuesto03",
-        title: "Repuesto 03",
-        image: "http://placekitten.com/300/400?image=3",
-        category: {
-            name: "Repuestos",
-            id: "repuestos"
-        },
-        price: 1000
-    },
-
-    {
-        id: "repuesto04",
-        title: "Repuesto 04",
-        image: "http://placekitten.com/300/400?image=4",
-        category: {
-            name: "Repuestos",
-            id: "repuestos"
-        },
-        price: 1000
-    },
-
-    {
-        id: "repuesto05",
-        title: "Repuesto 05",
-        image: "http://placekitten.com/300/400?image=5",
-        category: {
-            name: "Repuestos",
-            id: "repuestos"
-        },
-        price: 1000
-    },
-
-    //Accesorios
-    {
-        id: "accesorio01",
-        title: "Accesorio 01",
-        image: "http://placekitten.com/300/400?image=10",
-        category: {
-            name: "Accesorios",
-            id: "accesorios"
-        },
-        price: 1000
-    },
-
-    {
-        id: "accesorio02",
-        title: "Accesorio 02",
-        image: "http://placekitten.com/300/400?image=10",
-        category: {
-            name: "Accesorios",
-            id: "accesorios"
-        },
-        price: 1000
-    },
-
-    {
-        id: "accesorio03",
-        title: "Accesorio 03",
-        image: "http://placekitten.com/300/400?image=10",
-        category: {
-            name: "Accesorios",
-            id: "accesorios"
-        },
-        price: 1000
-    },
-
-    {
-        id: "accesorio04",
-        title: "Accesorio 04",
-        image: "http://placekitten.com/300/400?image=10",
-        category: {
-            name: "Accesorios",
-            id: "accesorios"
-        },
-        price: 1000
-    },
-
-    {
-        id: "accesorio05",
-        title: "Accesorio 05",
-        image: "http://placekitten.com/300/400?image=10",
-        category: {
-            name: "Accesorios",
-            id: "accesorios"
-        },
-        price: 1000
-    }
-];
-
+fetch("../json/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        products = data;
+        loadProducts(products);
+    })
 
 const prodContainer = document.getElementById("prodContainer");
 const btnFilter = document.getElementsByClassName("btn-filter");
@@ -144,7 +37,7 @@ function loadProducts(selectedProd) {
     console.log(pAdd);
 }
 
-loadProducts(products);
+
 
 Array.from(btnFilter).forEach(button => {
     button.addEventListener("click", (e)=> {
@@ -187,6 +80,21 @@ if(loadedProdLs) {
 
 
 function addToCart(e) {
+
+    Toastify({
+        text: "Producto Agregado",
+        duration: 2000,
+        close: true,
+        gravity: "top",
+        position: "right", 
+        stopOnFocus: true, 
+        style: {
+          background: "linear-gradient(to right, #222ba8, #060c64)",
+          borderRadius: "1.5rem",
+        },
+        onClick: function(){}
+      }).showToast();
+
 
     const idBtn = e.currentTarget.id;
     const addedProd = products.find(product => product.id === idBtn);
