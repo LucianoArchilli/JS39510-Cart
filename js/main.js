@@ -69,8 +69,8 @@ const products = [
     },
 
     {
-        id: "accesorio01",
-        title: "Accesorio 01",
+        id: "accesorio02",
+        title: "Accesorio 02",
         image: "http://placekitten.com/300/400?image=10",
         category: {
             name: "Accesorios",
@@ -80,8 +80,8 @@ const products = [
     },
 
     {
-        id: "accesorio01",
-        title: "Accesorio 01",
+        id: "accesorio03",
+        title: "Accesorio 03",
         image: "http://placekitten.com/300/400?image=10",
         category: {
             name: "Accesorios",
@@ -91,8 +91,8 @@ const products = [
     },
 
     {
-        id: "accesorio01",
-        title: "Accesorio 01",
+        id: "accesorio04",
+        title: "Accesorio 04",
         image: "http://placekitten.com/300/400?image=10",
         category: {
             name: "Accesorios",
@@ -102,8 +102,8 @@ const products = [
     },
 
     {
-        id: "accesorio01",
-        title: "Accesorio 01",
+        id: "accesorio05",
+        title: "Accesorio 05",
         image: "http://placekitten.com/300/400?image=10",
         category: {
             name: "Accesorios",
@@ -175,7 +175,16 @@ function updBtn() {
     });
 }
 
-const loadedProd = [];
+let loadedProd;
+const loadedProdLs = JSON.parse(localStorage.getItem("in-cart-products"));
+if(loadedProdLs) {
+    loadedProd = loadedProdLs
+    updMeter();
+} else {
+    loadedProd = []
+}
+
+
 
 function addToCart(e) {
 
