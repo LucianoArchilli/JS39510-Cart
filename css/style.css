@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;;
+};
+
+:root{
+    --clr-blue: #0000ff;
+    --clr-red: #ff0000;
+    --clr-black: #060606;
+    --clr-white: #edeaf8;
+    --clr-pa-blue: #030636;
+    --clr-pa-red: #be1e2d;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;    
+}
+
+nav{
+    position: sticky;
+    height: 100%;
+    top: 0;
+    background-color: white;
+    
+}
+
+.prod-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 2rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding: 30px;
+    border-bottom: #030636 solid 2px;
+}
+
+.logo{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    
+    border-bottom:#030636 solid 2px;
+}
+
+.info{
+    background-color: #030636;
+    color: white;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25;
+}
+
+.nav-btn{
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.p-add{
+    border: 0;
+    background-color: white;
+    color:#030636;
+    padding: .5rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: 0.25s;
+}
+
+.p-add:hover{
+    background-color: #030636;
+    color: white;
+}
+
+.cart-btn{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.meter{
+    background-color: white;
+    padding: .25rem;
+    border-radius: .25rem;
+}
+
+
+/* CART */
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blank-cart{
+    display: none;
+}
+
+.cart-com{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart-prod{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+    padding: .5rem;
+    padding-right: 2.5rem;
+    border-radius: 1rem;
+}
+
+.cart-img{
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.cart-prod p{
+    font-size: .75rem;
+}
+
+.cart-erase{
+    border: 0;
+    background-color: transparent;
+    color: #be1e2d;
+    cursor: pointer;
+}
+
+.cart-events{
+    display: flex;
+    justify-content: space-between;
+}
+
+.empty-cart{
+    border: 0;
+    background-color: gainsboro;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.buy-cart{
+    border: 0;
+    background-color: gainsboro;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cart-events-r{
+    display: flex;
+}
+
+.cart-events-total{
+    display: flex;
+    border: 0;
+    background-color: gainsboro;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+.disabled{
+    display: none;
+}

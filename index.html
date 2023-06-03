@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Peugeot Advance</title>
+</head>
+<body>
+    <div class="adv-container">
+
+        <!--ENCABEZADO -->
+        <header class="logo">PEUGEOT ADVANCE</header>
+
+        <!-- MENU -->
+        
+        <nav>
+            <ul class="menu">
+                <li><button id="all" class="btn-filter nav-btn active">Todos los productos</button></li>
+                <li><button id="repuestos" class="btn-filter nav-btn">Repuestos</button></li>
+                <li><button id="accesorios" class="btn-filter nav-btn">Accesorios</button></li>
+                <li i class="bi bi-cart-dash-fill"> <a class="cart-btn"  href="./pages/carrito.html">Carrito: </a><span id="meter" class="meter"> 0</span></li>
+            </ul>
+        </nav>
+        
+        <!-- PRODUCTOS -->
+
+        <h2 class="title" id="title">Todos los productos</h2>
+        <main>
+            <div id="prodContainer" class="prod-container"></div>
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">© Peugeot Advance 2016-2023</footer>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
