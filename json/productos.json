@@ -7,7 +7,7 @@
             "name": "Repuestos",
             "id": "repuestos"
         },
-        "price": 1000
+        "price": 100000
     },
 
     {
@@ -18,7 +18,7 @@
             "name": "Repuestos",
             "id": "repuestos"
         },
-        "price": 1000
+        "price": 25000
     },
 
     {
@@ -29,7 +29,7 @@
             "name": "Repuestos",
             "id": "repuestos"
         },
-        "price": 1000
+        "price": 75000
     },
 
     {
@@ -40,7 +40,7 @@
             "name": "Repuestos",
             "id": "repuestos"
         },
-        "price": 1000
+        "price": 60000
     },
 
     {
@@ -51,7 +51,7 @@
             "name": "Repuestos",
             "id": "repuestos"
         },
-        "price": 1000
+        "price": 120000
     },
 
     {
@@ -62,7 +62,7 @@
             "name": "Accesorios",
             "id": "accesorios"
         },
-        "price": 1000
+        "price": 7000
     },
 
     {
@@ -73,7 +73,7 @@
             "name": "Accesorios",
             "id": "accesorios"
         },
-        "price": 1000
+        "price": 1800
     },
 
     {
@@ -84,7 +84,7 @@
             "name": "Accesorios",
             "id": "accesorios"
         },
-        "price": 1000
+        "price": 3000
     },
 
     {
@@ -95,7 +95,7 @@
             "name": "Accesorios",
             "id": "accesorios"
         },
-        "price": 1000
+        "price": 700
     },
 
     {
@@ -106,6 +106,6 @@
             "name": "Accesorios",
             "id": "accesorios"
         },
-        "price": 1000
+        "price": 1500
     }
 ]

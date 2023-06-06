@@ -25,7 +25,7 @@ function loadProducts(selectedProd) {
                         <img class="p-img" src="${product.image}" alt="${product.title}">
                             <div class="info">
                                 <h3 class="p-title">${product.title}</h3>
-                                <p class="p-price">${product.price}</p>
+                                <p class="p-price">$${product.price}</p>
                                 <button class="p-add" id="${product.id}">Agregar</button>
                             </div>
                         `
