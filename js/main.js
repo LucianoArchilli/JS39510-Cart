@@ -1,17 +1,25 @@
+/* LISTADO DE PRODUCTOS */
+
 let products = [];
 
-fetch("../json/productos.json")
+fetch("./json/productos.json", { mode: 'no-cors' })
     .then(response => response.json())
     .then(data => {
         products = data;
         loadProducts(products);
     })
+    .catch(error => console.log(error))
+
+
+/* CONSTANTES DECLARADAS */
 
 const prodContainer = document.getElementById("prodContainer");
 const btnFilter = document.getElementsByClassName("btn-filter");
 const title = document.getElementById("title");
 let pAdd = document.getElementsByClassName("p-add");
 const meter = document.getElementById("meter");
+
+
 
 function loadProducts(selectedProd) {
 
@@ -36,7 +44,6 @@ function loadProducts(selectedProd) {
     updBtn();
     console.log(pAdd);
 }
-
 
 
 Array.from(btnFilter).forEach(button => {
